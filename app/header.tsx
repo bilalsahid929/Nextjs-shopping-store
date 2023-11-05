@@ -5,6 +5,7 @@ import Link from "next/link";
 import { BiSearch } from "react-icons/bi";
 import { PiHandbagSimpleBold, PiUserBold, PiHeartBold } from "react-icons/pi";
 import { HiMenuAlt3 } from "react-icons/hi";
+import { CartButton } from "./components";
 
 const Header: React.FC = () => {
   return (
@@ -21,7 +22,7 @@ const Header: React.FC = () => {
             <SearchBar />
           </div>
           <UserDropdown />
-          <PiHandbagSimpleBold size={20} />
+          <CartButton />
           <PiHeartBold size={20} />
           <div className="sm:hidden">
             <HamburgerMenu />
