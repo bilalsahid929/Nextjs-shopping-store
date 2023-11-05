@@ -1,10 +1,9 @@
 "use client";
 
-import useProductDetail from "./useProductDetail";
-import ThumbsGallary from "../_components/thumbsGallary";
 import ProductDetail from "../_components/productDetail";
-import dynamic from "next/dynamic";
-// const ProductDetail = dynamic(() => import("../_components/productDetail"), {
+import ThumbsGallary from "../_components/thumbsGallary";
+import useProductDetail from "./useProductDetail";
+// const ProductDetail = dynamicFunc(() => import("../_components/productDetail"), {
 //   ssr: false,
 // });
 const Page = ({ params }: { params: { id: string } }) => {
@@ -29,5 +28,7 @@ const Page = ({ params }: { params: { id: string } }) => {
     </div>
   );
 };
+
+export const dynamic = "force-dynamic";
 
 export default Page;

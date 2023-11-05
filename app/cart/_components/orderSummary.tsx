@@ -1,4 +1,4 @@
-import type { OrderSummary } from "@/app/store/useCart";
+import type { OrderSummary } from "@/app/store/useCartStore";
 
 const OrderSummary = ({ orderSummary }: { orderSummary?: OrderSummary }) => {
   const {

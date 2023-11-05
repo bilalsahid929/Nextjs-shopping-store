@@ -6,7 +6,6 @@ const CartTableSkeleton = () => {
       <h2 className="text-xl font-semibold mb-4">My Cart</h2>
 
       <div className="space-y-4">
-        {/* Skeleton for Cart Items */}
         {[1, 2, 3].map((index) => (
           <div key={index}>
             <div className="w-full flex items-center justify-between space-x-4">

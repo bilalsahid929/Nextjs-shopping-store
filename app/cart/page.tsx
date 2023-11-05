@@ -25,5 +25,5 @@ const CartPage = () => {
     </div>
   );
 };
-
+export const dynamic = "force-dynamic";
 export default CartPage;
