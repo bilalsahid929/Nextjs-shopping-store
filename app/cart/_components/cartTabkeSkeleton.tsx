@@ -1,4 +1,3 @@
-import React from "react";
 import { Skeleton } from "@/app/components";
 
 const CartTableSkeleton = () => {

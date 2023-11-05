@@ -1,7 +1,6 @@
 "use client";
-import React from "react";
-import useProducts from "../useProducts";
 import { Card } from "@/app/components";
+import useProducts from "../useProducts";
 
 const Products = () => {
   const { data: products, isError } = useProducts();

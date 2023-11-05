@@ -1,4 +1,3 @@
-import React from "react";
 import CartTableSkeleton from "./_components/cartTabkeSkeleton";
 import OrderSummarySkeleton from "./_components/orderSummarySkeleton";
 

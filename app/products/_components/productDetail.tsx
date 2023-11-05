@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { Product } from "../useProducts";
+"use client";
 import { QuantitySelector, Rating } from "@/app/components";
-import useCartStore from "@/app/store/useCart";
+import { useState } from "react";
+import { Product } from "../useProducts";
 
+import { useCartStore } from "@/app/store/useCartStore";
 const ProductDetail = ({ product }: { product: Product }) => {
-  const { addToCart } = useCartStore();
+  const { addToCart } = useCartStore((state) => state);
   const [quantity, setQuantity] = useState(1);
 
   const incrementQuantity = () => {
@@ -32,7 +33,11 @@ const ProductDetail = ({ product }: { product: Product }) => {
       </div>
       <button
         className="bg-primary text-white px-4 py-2 rounded-md hover:bg-primary-dark"
-        onClick={() => addToCart({ ...product, count: quantity })}
+        onClick={() => addToCart(product)}
+        // onClick={() => {
+        //   addToCart &&
+        //     addToCart({ ...restProduct, count: quantity } as CartItem);
+        // }}
       >
         Add to Cart
       </button>

@@ -1,4 +1,3 @@
-import React from "react";
 import type { OrderSummary } from "@/app/store/useCart";
 
 const OrderSummary = ({ orderSummary }: { orderSummary?: OrderSummary }) => {

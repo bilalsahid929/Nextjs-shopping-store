@@ -1,12 +1,12 @@
 "use client";
-import { useState } from "react";
 import {
+  FreeMode,
+  Navigation,
   Swiper,
   SwiperSlide,
-  Navigation,
   Thumbs,
-  FreeMode,
 } from "@/app/components/Slider";
+import { useState } from "react";
 import type { SwiperClass } from "swiper/react";
 import ImageSlide from "./imageSlide";
 
